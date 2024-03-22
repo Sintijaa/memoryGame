@@ -1,49 +1,24 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import './App.css';
+import { useState } from 'react';
+import './style/App.css';
+import Login from './components/Login';
+import Home from './components/Home';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-const HomePage = () => (
-  <div>
-    <h1>Welcome to the Memory Game!</h1>
-    {/* Game components go here */}
-  </div>
-);
 
-const RegistrationPage = () => (
-  <div>
-    <h1>Registration</h1>
-    {/* Registration form goes here */}
-  </div>
-);
+function App() {
+  const [count, setCount] = useState(0)
 
-const ProfilePage = () => (
-  <div>
-    <h1>Profile</h1>
-    {/* Profile details go here */}
-  </div>
-);
+  return (
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/login' element={<Login />}></Route>
+          <Route path='/' element={<Home />}></Route>
+        </Routes>
+      </BrowserRouter>
+      
+    </>
+  )
+}
 
-const Header = () => (
-  <header>
-    <nav>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/register">Register</Link></li>
-        <li><Link to="/profile">Profile</Link></li>
-      </ul>
-    </nav>
-  </header>
-);
-
-const App = () => (
-  <Router>
-    <div>
-      <Header />
-      <Route exact path="/" component={HomePage} />
-      <Route path="/register" component={RegistrationPage} />
-      <Route path="/profile" component={ProfilePage} />
-    </div>
-  </Router>
-);
-
-export default App;
+export default App
