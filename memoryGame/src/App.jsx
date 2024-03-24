@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import './style/App.css';
-import Login from './components/Login';
-import Home from './components/Home';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/Home'; 
+import Login from './components/Login'; 
+// import Profile from './components/Profile'; 
 
 
 function App() {
@@ -13,7 +13,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/login' element={<Login />}></Route>
-          <Route path='/' element={<Home />}></Route>
+          <Route path='/Home' element={<Home />}></Route>
+          {/* <Route path='/Profile' element={<Profile />}></Route> */}
         </Routes>
       </BrowserRouter>
       
