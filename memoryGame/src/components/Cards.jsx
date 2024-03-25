@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import '../styles/Cards.css';
+import '../style/cards.css';
 
 function Card({hexCode, name, handleClick}) {
     return (

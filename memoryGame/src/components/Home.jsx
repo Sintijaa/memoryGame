@@ -34,17 +34,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import '../style/home.css';
 
-const Header = () => (
-  <header>
-    <nav>
-      <ul>
-        <li><Link to="/homePage">Home</Link></li>
-        <li><Link to="/login">Login</Link></li>
-        <li><Link to="/profile">Profile</Link></li>
-      </ul>
-    </nav>
-  </header>
-);
+
 
 function Home() {
 
@@ -56,12 +46,15 @@ function Home() {
 
   return (
     <div>
-      <Header />
-      <h1>Laipni lūgti spēlē</h1>
-      {/* Piemēra pogas navigācijai */}
-      <button onClick={navigateToLogin}>Ielogoties</button>
-      <button onClick={navigateToHome}>Sākumlapa</button>
-      <button onClick={navigateToProfile}>Profils</button>
+     <header>
+    <nav>
+      <ul>
+        <li><Link to="/homePage">Home</Link></li>
+        <li><Link to="/login">Login</Link></li>
+        <li><Link to="/profile">Profile</Link></li>
+      </ul>
+    </nav>
+  </header>
     </div>
   );
 }
