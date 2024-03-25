@@ -49,6 +49,7 @@ function Home() {
      <header>
     <nav>
       <ul>
+        <h1>Memory game</h1>
         <li><Link to="/homePage">Home</Link></li>
         <li><Link to="/login">Login</Link></li>
         <li><Link to="/profile">Profile</Link></li>
