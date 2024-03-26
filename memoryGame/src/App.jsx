@@ -2,7 +2,7 @@ import React from 'react';
 import { Router, Routes, Route, BrowserRouter } from 'react-router-dom';
 import Home from './components/Home'; 
 import Login from './components/Login'; 
-// import Profile from './components/Profile';
+import Profile from './components/Profile';
 // import Game from './components/Game';
 import Title from './components/Title';
 import Cards from './components/Cards';
@@ -31,7 +31,7 @@ function App() {
           <Route path='/Title' element={<Title />}></Route>
           <Route path='/Stats' element={<Stats />}></Route>
           <Route path='/Cards' element={<Cards />}></Route>
-          {/* <Route path='/Profile' element={<Profile />}></Route> */}
+          <Route path='/Profile' element={<Profile />}></Route>
           {/* <Route path='Game' element={<Game />}></Route> */}
         </Routes>
       </BrowserRouter>

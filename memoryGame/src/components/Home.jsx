@@ -41,21 +41,20 @@ function Home() {
   const navigate = useNavigate();
 
   const navigateToLogin = () => navigate("/login");
-  const navigateToHome = () => navigate("/homePage");
-  const navigateToProfile = () => navigate("/profilePage");
+  const navigateToProfile = () => navigate("/Profiles");
 
   return (
     <div>
      <header>
-    <nav>
-      <ul>
-        <h1>Memory game</h1>
-        <li><Link to="/homePage">Home</Link></li>
-        <li><Link to="/login">Login</Link></li>
-        <li><Link to="/profile">Profile</Link></li>
-      </ul>
-    </nav>
-  </header>
+     <h1>Memory game</h1>
+        <nav>
+          <ul>
+            <li><Link to="/login">Login</Link></li>
+            <li><Link to="/profile">Profile</Link></li>
+
+          </ul>
+        </nav>
+      </header>
     </div>
   );
 }

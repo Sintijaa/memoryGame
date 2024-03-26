@@ -1,0 +1,55 @@
+.profile {
+    background-color: #2A355E;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .profile h2 {
+    margin-bottom: 20px;
+  }
+  
+  .profile-info {
+    margin-bottom: 20px;
+  }
+  
+  .profile-info div {
+    margin-bottom: 10px;
+  }
+  
+  .profile button {
+    margin-left: 10px;
+  }
+  
+  .profile-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-image-container strong {
+    margin-bottom: 10px;
+  }
+  
+  .profile-image {
+    border-radius: 50%;
+    width: 150px; /* Palielinām attēla izmēru */
+    height: 150px; /* Palielinām attēla izmēru */
+    margin-bottom: 10px;
+  }
+  
+  .profile button {
+    background-color: #4CAF50; /* Zaļa krāsa pogai */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .profile button:hover {
+    background-color: #45a049; /* Krāsas maiņa, kad poga tiek pārvietota virsū */
+  }
+  
