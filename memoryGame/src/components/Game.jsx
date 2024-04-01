@@ -1,9 +1,10 @@
 import { useState } from 'react'
-// import Title from './components/Title';
-// import Stats from './components/Stats'
-// import Cards from './components/Cards';
+import Title from './Title';
+import Stats from './Stats'
+import Cards from './Cards';
 import { useEffect } from 'react';
-// import GameOver from './components/GameOver';
+import GameOver from './GameOver';
+import Header from './Header';
 
 let overlayStyle = {
     visibility: 'hidden',
@@ -63,10 +64,8 @@ let overlayStyle = {
   
     return (
       <>
-        <header>
-          <Title/>
-          <Stats level={level} score={score} highestScore={highestScore}/>
-        </header>
+        <Title/>
+        <Stats level={level} score={score} highestScore={highestScore}/>
         <main>
           <Cards 
           level={level} 

@@ -4,9 +4,6 @@ import Home from './components/Home';
 import Login from './components/Login'; 
 import Profile from './components/Profile';
 // import Game from './components/Game';
-import Title from './components/Title';
-import Cards from './components/Cards';
-import Stats from './components/Stats';
 import Game from './components/Game';
 
 
@@ -29,9 +26,6 @@ function App() {
         <Routes>
           <Route path='/login' element={<Login />}></Route>
           <Route path='/' element={<Home />}></Route>
-          <Route path='/Title' element={<Title />}></Route>
-          <Route path='/Stats' element={<Stats />}></Route>
-          <Route path='/Cards' element={<Cards />}></Route>
           <Route path='/Profile' element={<Profile />}></Route>
           <Route path='Game' element={<Game />}></Route> 
           
