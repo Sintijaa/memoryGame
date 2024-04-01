@@ -41,15 +41,15 @@
   }
   
   .profile button {
-    background-color: #4CAF50; /* Zaļa krāsa pogai */
+    background-color: #7a7e7a; /* Zaļa krāsa pogai */
     color: white;
-    padding: 10px 20px;
+    padding: 5px 10px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
   }
   
   .profile button:hover {
-    background-color: #45a049; /* Krāsas maiņa, kad poga tiek pārvietota virsū */
+    background-color: #656d66; /* Krāsas maiņa, kad poga tiek pārvietota virsū */
   }
   

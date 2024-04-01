@@ -42,6 +42,8 @@ function Home() {
 
   const navigateToLogin = () => navigate("/login");
   const navigateToProfile = () => navigate("/Profiles");
+  const navigateToGame = () => navigate("/Game");
+  // const navigateToLeaderboard = () => navigate("/Leaderboard");
 
   return (
     <div>
@@ -49,8 +51,10 @@ function Home() {
      <h1>Memory game</h1>
         <nav>
           <ul>
-            <li><Link to="/login">Login</Link></li>
+            <li><Link to="/Game">Game</Link></li>
             <li><Link to="/profile">Profile</Link></li>
+            <li><Link to="/login">Login</Link></li>
+            {/* <li><link to="/leaderboard">Leaderboard</link></li> */}
 
           </ul>
         </nav>
