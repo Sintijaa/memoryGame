@@ -5,6 +5,7 @@ import Login from './components/Login';
 import Profile from './components/Profile';
 // import Game from './components/Game';
 import Game from './components/Game';
+import Leaderboard from './components/Leaderboard';
 
 
 let overlayStyle = {
@@ -28,7 +29,7 @@ function App() {
           <Route path='/' element={<Home />}></Route>
           <Route path='/Profile' element={<Profile />}></Route>
           <Route path='Game' element={<Game />}></Route> 
-          
+          <Route path='Leaderboard' element={<Leaderboard />}></Route>
 
         </Routes>
       </BrowserRouter>
